@@ -1,0 +1,10 @@
+<div class="container">
+  <h1 class="title">
+    <span *ngIf="title$ | async else defaultTitle">
+      {{title$ | async}}
+    </span>
+    <ng-template #defaultTitle>
+      {{ 'PAGES.HOME.TITLE' | translate }}
+    </ng-template>
+  </h1>
+</div>

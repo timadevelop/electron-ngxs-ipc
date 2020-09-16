@@ -102,7 +102,7 @@
 * [Bumped Version] 6.0.0 ([fb719ab](https://github.com/maximegris/angular-electron/commit/fb719ab))
 * bump angular version ([7a564a0](https://github.com/maximegris/angular-electron/commit/7a564a0))
 * Fix Travis CI link ([10aaa4c](https://github.com/maximegris/angular-electron/commit/10aaa4c))
-* Not gitignore src/karma.conf.js ([7599320](https://github.com/maximegris/angular-electron/commit/7599320))
+* Not gitignore src/renderer/views/primary/karma.conf.js ([7599320](https://github.com/maximegris/angular-electron/commit/7599320))
 * ref/ upgrade Angular 8 and Electron 5 ([92334cf](https://github.com/maximegris/angular-electron/commit/92334cf))
 * update versions and prepare for electron 5 ([07a5786](https://github.com/maximegris/angular-electron/commit/07a5786))
 * version bump ([bb1d6bb](https://github.com/maximegris/angular-electron/commit/bb1d6bb))

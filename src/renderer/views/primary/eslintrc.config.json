@@ -1,0 +1,6 @@
+{
+    "extends": "../../../../../eslintrc.json",
+    "parserOptions": {
+        "project": ["src/renderer/views/primary/tsconfig.app.json", "src/renderer/views/primary/tsconfig.spec.json"]
+    }
+}

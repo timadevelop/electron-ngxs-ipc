@@ -10,9 +10,10 @@
         "!LICENSE.md",
         "!package.json",
         "!package-lock.json",
-        "!src/",
+        "!src/renderer/views/primary/",
         "!e2e/",
         "!hooks/",
+        "!docs/",
         "!angular.json",
         "!_config.yml",
         "!karma.conf.js",
@@ -20,19 +21,19 @@
         "!tslint.json"
     ],
   "win": {
-    "icon": "dist",
+    "icon": "dist/angular/assets",
     "target": [
       "portable"
     ]
   },
   "mac": {
-    "icon": "dist",
+    "icon": "dist/angular/assets",
     "target": [
       "dmg"
     ]
   },
   "linux": {
-    "icon": "dist",
+    "icon": "dist/angular/assets",
     "target": [
       "AppImage"
     ]

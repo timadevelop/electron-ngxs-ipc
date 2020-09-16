@@ -1,0 +1,22 @@
+{
+  "COMMON": {
+    "LANGUAGE": "Язык",
+    "WINDOW": "Окно",
+    "WINDOWS": "Окна",
+    "WINDOW_ID": "Идентификатор окна",
+    "TITLE": "Заголовок",
+    "CHANGE_TITLE": "Изменть заголовок",
+    "CREATE_NEW_WINDOW": "Создать новое окно",
+    "MESSAGES": "Сообщения",
+    "ENTER_MESSAGE_PLACEHOLDER": "Введите свое сообщение",
+    "SEND_MESSAGE": "Отправить сообщение",
+    "LAST_RECEIVED_MSG": "Последнее полученное сообщение",
+    "RNUMBER": "Рандомный номер",
+    "RANDOMIZE_WITH_DELAY": "Рандом (с 5секундной задержкой)"
+  },
+  "PAGES": {
+      "HOME": {
+          "TITLE": "Оно работает !"
+      }
+  }
+}

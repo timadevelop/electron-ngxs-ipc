@@ -20,8 +20,8 @@
     ]
   },
   "include": [
-    "main.ts",
-    "src/**/*"
+    "src/main/**/*",
+    "src/renderer/views/primary/**/*"
   ],
   "exclude": [
     "node_modules"

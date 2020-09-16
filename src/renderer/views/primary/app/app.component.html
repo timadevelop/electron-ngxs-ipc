@@ -1,0 +1,57 @@
+<div>
+  {{ "COMMON.LANGUAGE" | translate }}:
+  <button (click)="changeLang('ru')">ru</button> | <button (click)="changeLang('en')">en</button>
+</div>
+
+<h2>
+  {{ "COMMON.WINDOW_ID" | translate }}:
+  <span class="tag">{{ windowId$ | async }}</span>
+</h2>
+<div>
+  <h2>
+    {{ "COMMON.TITLE" | translate }}:
+    <span class="tag">{{ title$ | async }}</span>
+  </h2>
+  <button (click)="changeTitle()">
+    {{ "COMMON.CHANGE_TITLE" | translate }}
+  </button>
+</div>
+
+<h3>{{ "COMMON.RNUMBER" | translate }}:</h3>
+<div>
+  <span class="tag">{{ rnumber$ | async }}</span>
+  <button (click)="rand()">
+    {{ "COMMON.RANDOMIZE_WITH_DELAY" | translate }}
+  </button>
+</div>
+
+<h3>{{ "COMMON.WINDOWS" | translate }}:</h3>
+<div>
+  <span class="tag">{{ windowIds$ | async | json }}</span>
+  <button (click)="createNewWindow()">
+    {{ "COMMON.CREATE_NEW_WINDOW" | translate }}
+  </button>
+</div>
+
+<h3>{{ "COMMON.MESSAGES" | translate }} :</h3>
+<div>
+  <input
+    #msg
+    type="text"
+    [placeholder]="'COMMON.ENTER_MESSAGE_PLACEHOLDER' | translate"
+  />
+  <select #windowIdSelect>
+    <option *ngFor="let wid of windowIds$ | async" [value]="wid"
+      >{{ "COMMON.WINDOW" | translate }} #{{ wid }}</option
+    >
+  </select>
+  <button (click)="sendMessage(msg.value, windowIdSelect.value)">
+    {{ "COMMON.SEND_MESSAGE" | translate }}
+  </button>
+  <p>
+    {{ "COMMON.LAST_RECEIVED_MSG" | translate }}:
+    <span class="tag">{{ message$ | async }}</span>
+  </p>
+</div>
+
+<router-outlet></router-outlet>

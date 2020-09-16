@@ -1,0 +1,20 @@
+{
+  "extends": "../../../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../../out-tsc/app",
+    "module": "es2015",
+    "baseUrl": "",
+    "types": []
+  },
+  "include": [
+    "./**/*"
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "./polyfills-test.ts",
+    "./test.ts",
+    "./environments/environment.web.ts",
+    "./environments/environment.prod.ts",
+    "./environments/environment.dev.ts",
+  ]
+}

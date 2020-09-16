@@ -5,27 +5,22 @@
   "projects": {
     "angular-electron": {
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "src/renderer/views/primary/",
       "projectType": "application",
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "dist",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "tsConfig": "src/tsconfig.app.json",
-            "polyfills": "src/polyfills.ts",
+            "outputPath": "dist/angular",
+            "index": "src/renderer/views/primary/index.html",
+            "main": "src/renderer/views/primary/main.ts",
+            "tsConfig": "src/renderer/views/primary/tsconfig.app.json",
+            "polyfills": "src/renderer/views/primary/polyfills.ts",
             "assets": [
-              "src/assets",
-              "src/favicon.ico",
-              "src/favicon.png",
-              "src/favicon.icns",
-              "src/favicon.256x256.png",
-              "src/favicon.512x512.png"
+              "src/renderer/views/primary/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/renderer/views/primary/styles.scss"
             ],
             "scripts": [],
             "customWebpackConfig": {
@@ -45,8 +40,8 @@
               "buildOptimizer": false,
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.dev.ts"
+                  "replace": "src/renderer/views/primary/environments/environment.ts",
+                  "with": "src/renderer/views/primary/environments/environment.dev.ts"
                 }
               ]
             },
@@ -62,8 +57,8 @@
               "buildOptimizer": false,
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.web.ts"
+                  "replace": "src/renderer/views/primary/environments/environment.ts",
+                  "with": "src/renderer/views/primary/environments/environment.web.ts"
                 }
               ]
             },
@@ -79,8 +74,8 @@
               "buildOptimizer": true,
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "src/renderer/views/primary/environments/environment.ts",
+                  "with": "src/renderer/views/primary/environments/environment.prod.ts"
                 }
               ]
             }
@@ -112,21 +107,16 @@
         "test": {
           "builder": "@angular-builders/custom-webpack:karma",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills-test.ts",
-            "tsConfig": "src/tsconfig.spec.json",
-            "karmaConfig": "src/karma.conf.js",
+            "main": "src/renderer/views/primary/test.ts",
+            "polyfills": "src/renderer/views/primary/polyfills-test.ts",
+            "tsConfig": "src/renderer/views/primary/tsconfig.spec.json",
+            "karmaConfig": "src/renderer/views/primary/karma.conf.js",
             "scripts": [],
             "styles": [
-              "src/styles.scss"
+              "src/renderer/views/primary/styles.scss"
             ],
             "assets": [
-              "src/assets",
-              "src/favicon.ico",
-              "src/favicon.png",
-              "src/favicon.icns",
-              "src/favicon.256x256.png",
-              "src/favicon.512x512.png"
+              "src/renderer/views/primary/assets"
             ],
             "customWebpackConfig": {
               "path": "./angular.webpack.js",
@@ -137,10 +127,10 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "eslintConfig": "src/eslintrc.config.json",
+            "eslintConfig": "src/renderer/views/primary/eslintrc.config.json",
             "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
+              "src/renderer/views/primary/tsconfig.app.json",
+              "src/renderer/views/primary/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

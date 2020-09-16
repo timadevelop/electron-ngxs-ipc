@@ -1,0 +1,22 @@
+{
+  "COMMON": {
+    "LANGUAGE": "Language",
+    "WINDOW": "Window",
+    "WINDOWS": "Windows",
+    "WINDOW_ID": "Window id",
+    "TITLE": "Title",
+    "CHANGE_TITLE": "Change title",
+    "CREATE_NEW_WINDOW": "Create new window",
+    "MESSAGES": "Messages",
+    "ENTER_MESSAGE_PLACEHOLDER": "Enter your message",
+    "SEND_MESSAGE": "Send Message",
+    "LAST_RECEIVED_MSG": "Last received message",
+    "RNUMBER": "Random number",
+    "RANDOMIZE_WITH_DELAY": "Randomize (5s delay)"
+  },
+  "PAGES": {
+      "HOME": {
+          "TITLE": "App works !"
+      }
+  }
+}

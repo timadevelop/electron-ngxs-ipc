@@ -16,7 +16,7 @@
     "spectron",
     "sass"
   ],
-  "main": "main.js",
+  "main": "dist/out-tsc/main/index.js",
   "private": true,
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
@@ -90,5 +90,10 @@
   },
   "engines": {
     "node": ">=10.13.0"
+  },
+  "dependencies": {
+    "@ngxs/devtools-plugin": "3.6.2",
+    "@ngxs/logger-plugin": "3.6.2",
+    "@ngxs/store": "3.6.2"
   }
 }

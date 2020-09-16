@@ -6,9 +6,9 @@
 /out-tsc
 /app-builds
 /release
-main.js
-src/**/*.js
-!src/karma.conf.js
+src/main/index.js
+src/renderer/views/primary/**/*.js
+!src/renderer/views/primary/karma.conf.js
 *.js.map
 
 # dependencies
@@ -33,7 +33,7 @@ src/**/*.js
 # misc
 /.sass-cache
 /connect.lock
-/coverage
+coverage/
 /libpeerconnection.log
 npm-debug.log
 testem.log
